@@ -1,0 +1,45 @@
+body {
+    background-color: #816797 ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#about {
+    font-size: smaller;
+    font-style: italic;
+}
+
+#baslık1 {
+    text-align: center;
+}
+
+.seasons {
+    background-color: #51557E;
+
+}
+
+.cast {
+    background-color: darkolivegreen;
+    opacity: 0.5;
+}
+
+.episodes {
+    text-align: center;
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li {
+    float: left;
+
+}
+nav li a {
+    display: block;
+    color: white;
+    padding: 26px;
+    text-decoration: none;
+  }

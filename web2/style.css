@@ -42,4 +42,9 @@ nav li a {
     color: white;
     padding: 26px;
     text-decoration: none;
-  }
+}
+
+#ticboom li:nth-child(5n){
+    color: red;
+    
+}

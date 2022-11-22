@@ -31,22 +31,7 @@
 
     </div>
 
-    <script>
-
-        var getname=document.querySelector("#myname");
-        var changeName=prompt("isim girin");
-        getname.innerHTML=`${changeName}`
-        
-        function showtime(){
-            var today=new Date();
-            const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-            var day=weekday[today.getDay()];
-            document.getElementById("myClock").innerHTML=today.getHours()+':'+today.getMinutes()+':'+today.getSeconds()+ ' '+day;
-        }
-        showtime();
-        setInterval(showtime, 1000);
-        
-    </script>
+    <script src="./odev.js"></script>
     
 </body>
 </html>

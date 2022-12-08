@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  color: white;
+}
+.app{
+  text-align: center;
+  min-height: 100vh;
+  color: rgb(0, 0, 0);
+
+}
+
+.app.dark{
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  color: white;
+}
+
+
+.active {
+  background-color: aquamarine;
+}
+.liactive {
+  background-color:powderblue;
+}
+a{
+  text-decoration: none;
+}
+ label{
+  display: block;
+}
+.error{
+  color:red;
+}

@@ -1,15 +1,15 @@
-import axios from 'axios';
 import "./weather.css"
+import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useWeather } from './WeatherContext';
 
 function City() {
-    const {city,setCity,blueprint}=useWeather("ankara"); 
-    const [weather,setWeather]=useState([]) 
+    const {city,blueprint}=useWeather(""); 
+    const [,setWeather]=useState([]) 
    let count=0;
    let dayCount=0;
    const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-const d = new Date();
+   const d = new Date();
     
     useEffect(()=>{
         axios(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=d4eba4bb3a2cd6ed0bb563ded94832da&cnt=40&units=metric`)
@@ -35,24 +35,15 @@ const d = new Date();
   return (
     <div className='whatever'>
       {blueprint.map((item,index) => (
-       <div className='item' key={index}>
-          
-          <div>
-            {item.day}
-          </div>
+       <div className='item' key={index}>          
+          <div> {item.day}</div>
           <img src={item.icon.substring(10,54)}/>
-
-        <div>
-          <span className='temp_max'>{Math.round(item.temp_max)} </span>
-          <span className='temp_min'>{Math.round(item.temp_min)}</span>
-        </div>
-
+          <div>
+            <span className='temp_max'>{Math.round(item.temp_max)} </span>
+            <span className='temp_min'>{Math.round(item.temp_min)}</span>
+          </div>
        </div>
-  ))}
-
-
-        
-
+    ))}
     </div>
   )
 }

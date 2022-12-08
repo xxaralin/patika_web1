@@ -4,7 +4,7 @@ import { WeatherProvider } from './context/WeatherContext.js';
 
 function App() {
   return (
-    <div>          
+    <div className='App'>          
           <WeatherProvider>
             <Container/>
           

@@ -1,22 +1,16 @@
 .App {
   display: flex;
-  padding-top: 10ch;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
   
 }
 .container{
-  padding-bottom: 10ch;
-  align-items: center;
+  padding: 50px 30px 50px 30px;
   background-color: #dadde0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
 }
 
 .divSelect{
-  text-align:  left !important;
   padding-bottom: 2ch;
-  
 }
 .customSelect{
   font-family: Arial;
